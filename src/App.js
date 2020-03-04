@@ -1,5 +1,7 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import logo from './logo.svg';
+import Button from '@material-ui/core/Button';
 import './App.css';
 
 function App() {
@@ -19,8 +21,11 @@ function App() {
           Learn React
         </a>
       </header>
+      <Button variant="contained" color="primary">
+      Hola Mundo!
+      </Button>
     </div>
   );
 }
-
+ReactDOM.render(<App />, document.querySelector('#app'));
 export default App;
